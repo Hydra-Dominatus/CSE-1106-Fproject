@@ -1,0 +1,9 @@
+- use occupancy counter variable to track room occupancy
+- have a max occupany variable
+- pass a variable for max occupancy to a function that would turn on the LED on the Rpi
+- function enterRoom() to update occupancy counter when someone enters
+- function exitRoom() to decrement occupany counter when someone leaves the room
+- perform a check on occupancy counter inside exitRoom() so that max occupancy is not < 0
+- in enterRoom() perform a check using max occupancy to ensure occupancy counter does not exceed room capacity
+- use if statements to track changes to occupany counter and if change occurs then open change log file and update it
+- allow user to change max occupancy variable using a define
