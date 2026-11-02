@@ -1,0 +1,8 @@
+- system shall allow the user to record when a person enters/exits a study room
+- system will maintain accurate count of current occupants
+- system will prevent occupancy from becoming negative
+- system shall prevent count from exceeding maximum room capacity
+- system shall display current room occupancy and room status
+- system will save changes to occupany in a file
+- system will use an LED connected to a raspberry pi to indicate when room is full
+- system will support a change to maximum room occupancy
