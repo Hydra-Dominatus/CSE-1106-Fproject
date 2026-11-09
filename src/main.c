@@ -1,22 +1,30 @@
 #include <stdio.h>
+#include <unistd.h>
+#include <pigpio.h>
 
+#define PIN 17 
 
-void turnOnLed(int *occupancy)
+void turnOnLed(int occupancyCounter, int max)
 {
-	/*
-	if (*occupancy == MAX)
+	if (occupancyCounter == max)
 	{
-		//make the LED turn on i guess?
-        }
-	*/
+		gpioInitialize();
+		gpioSetMode(PIN,PI_OUTPUT);
+		gpioWrite(PIN, 1); // LED ON
+		gpioTerminate();
+		return 0;
+    }
+	else
+	{
+		
 }
 
-void  enterRoom(int *occupancy, int max)
+void  enterRoom(int *occupancyCounter, int max)
 {
 	
-        if (*occupancy < max)
+        if (*occupancyCounter < max)
         {
-              ++(*occupancy);
+              ++(*occupancyCounter);
 
 
               FILE * FH = fopen("change_log.md", "r+");
@@ -38,13 +46,13 @@ void  enterRoom(int *occupancy, int max)
         
 }
 
-void  exitRoom(int *occupancy)
+void  exitRoom(int *occupancyCounter)
 {
         
-	if (*occupancy > 0)
+	if (*occupancyCounter > 0)
 	{
 
-              --(*occupancy);
+              --(*occupancyCounter);
            
 
               FILE * FH = fopen("change_log.md", "r+");
@@ -85,6 +93,7 @@ int main()
 		switch(choice): 
     case 1:
 	   enterRoom(&occupancyCounter, maxOccupancy);
+	   turnOnLEd(occupancyCounter, maxOccupancy);
 	   break;
 
    case 2:
