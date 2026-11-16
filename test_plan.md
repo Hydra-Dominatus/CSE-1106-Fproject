@@ -7,3 +7,9 @@ Test Cases:
 5. Ensure that the LED turns on when the room is at maximum capacity and turns off when a user leaves the room.
 6. Ensure LED changes to reflect a change in the maximum occupancy. If old maximum occupancy is less than new maximum occupancy, LED stays on and if old maximum occupancy is less than new maximum occupancy, LED turns off.
 7. Ensure that LED turns off when option 4, exit, is selected.
+
+1. 2/5    SPACE AVAILABLE OFF
+2. 4/5    SPACE AVAILABLE OFF
+3. 5/5    ROOM FULL        ON
+4. 0/5    SPACE AVAILABLE OFF
+5. 6/5    ROOM FULL        ON
