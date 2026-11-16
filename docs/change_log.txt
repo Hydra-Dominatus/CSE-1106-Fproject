@@ -1,0 +1,154 @@
+Occupancy increased by one
+Occupancy increased by one
+Occupancy increased by one
+Occupancy increased by one
+Occupancy increased by one
+Occupancy decreased by one
+Occupancy decreased by one
+Occupancy decreased by one
+Occupancy increased by one
+Occupancy increased by one
+Occupancy increased by one
+Occupancy increased by one
+Occupancy increased by one
+Occupancy decreased by one
+Occupancy decreased by one
+Occupancy increased by one
+Occupancy increased by one
+Occupancy increased by one
+Occupancy increased by one
+Occupancy increased by one
+Occupancy decreased by one
+Occupancy increased by one
+Occupancy increased by one
+Occupancy increased by one
+Occupancy increased by one
+Occupancy decreased by one
+Occupancy decreased by one
+Occupancy increased by one
+Occupancy increased by one
+Occupancy increased by one
+Occupancy decreased by one
+Occupancy decreased by one
+Occupancy increased by one
+Occupancy increased by one
+Occupancy decreased by one
+Occupancy increased by one
+Occupancy increased by one
+Occupancy increased by one
+Occupancy increased by one
+Occupancy decreased by one
+Occupancy increased by one
+Occupancy increased by one
+Occupancy decreased by one
+Occupancy increased by one
+Occupancy increased by one
+Occupancy increased by one
+Occupancy increased by one
+Occupancy increased by one
+Occupancy increased by one
+Occupancy increased by one
+Occupancy increased by one
+Occupancy increased by one
+Occupancy increased by one
+2026-11-09 11:32:1794245560 Current occupancy: -558068/5
+2026-11-09 11:32:1794245563 Current occupancy: -558068/5
+2026-11-09 11:32:1794245565 Current occupancy: -558068/5
+2026-11-09 11:35 Current occupancy: -5659636/5
+2026-11-09 11:37 Current occupancy: 1/5
+2026-11-09 11:39 Occupancy increased ,Current occupancy: 1/5
+2026-11-09 11:39 Occupancy decreased, Current Occupancy: 0/5
+2026-11-09 11:40 Occupancy increased ,Current occupancy: 1/5
+2026-11-09 11:40 Occupancy increased ,Current occupancy: 2/5
+2026-11-09 11:40 Occupancy increased ,Current occupancy: 3/5
+2026-11-09 11:40 Occupancy decreased, Current Occupancy: 2/3
+2026-11-09 11:40 Occupancy increased ,Current occupancy: 3/10
+2026-11-09 11:40 Occupancy increased ,Current occupancy: 4/10
+2026-11-09 11:40 Occupancy increased ,Current occupancy: 5/10
+2026-11-09 11:40 Occupancy increased ,Current occupancy: 6/10
+2026-11-09 11:40 Occupancy increased ,Current occupancy: 7/10
+2026-11-09 11:40 Occupancy increased ,Current occupancy: 8/10
+2026-11-09 11:40 Occupancy increased ,Current occupancy: 9/10
+2026-11-09 11:40 Occupancy increased ,Current occupancy: 10/10
+2026-11-09 11:41 Occupancy decreased, Current Occupancy: 9/4
+2026-11-09 11:41 Occupancy decreased, Current Occupancy: 8/4
+2026-11-09 11:41 Occupancy decreased, Current Occupancy: 7/4
+2026-11-09 11:41 Occupancy decreased, Current Occupancy: 6/4
+2026-11-09 11:41 Occupancy decreased, Current Occupancy: 5/4
+2026-11-09 11:41 Occupancy decreased, Current Occupancy: 4/4
+2026-11-09 11:41 Occupancy decreased, Current Occupancy: 3/4
+2026-11-09 11:41 Occupancy decreased, Current Occupancy: 2/4
+2026-11-09 11:41 Occupancy decreased, Current Occupancy: 1/4
+2026-11-09 11:41 Occupancy decreased, Current Occupancy: 0/4
+2026-11-09 11:41 Occupancy increased ,Current occupancy: 1/4
+2026-11-09 11:41 Occupancy increased ,Current occupancy: 2/4
+2026-11-09 11:41 Occupancy increased ,Current occupancy: 3/4
+2026-11-09 11:41 Occupancy increased ,Current occupancy: 4/4
+2026-11-16 09:38 Occupancy increased ,Current occupancy: 1/5
+2026-11-16 09:38 Occupancy increased ,Current occupancy: 2/5
+2026-11-16 09:38 Occupancy increased ,Current occupancy: 3/5
+2026-11-16 09:38 Occupancy increased ,Current occupancy: 4/5
+2026-11-16 09:38 Occupancy increased ,Current occupancy: 5/5
+2026-11-16 09:39 Occupancy decreased, Current Occupancy: 4/5
+2026-11-16 09:41 Occupancy increased ,Current occupancy: 5/5
+2026-11-16 09:45 Occupancy increased ,Current occupancy: 1/5
+2026-11-16 09:45 Occupancy increased ,Current occupancy: 2/5
+2026-11-16 09:45 Occupancy increased ,Current occupancy: 3/5
+2026-11-16 09:45 Occupancy increased ,Current occupancy: 4/5
+2026-11-16 09:45 Occupancy increased ,Current occupancy: 5/5
+2026-11-16 09:46 Occupancy decreased, Current Occupancy: 2/3
+2026-11-16 09:46 Occupancy increased ,Current occupancy: 3/3
+2026-11-16 09:46 Occupancy increased ,Current occupancy: 4/5
+2026-11-16 09:46 Occupancy increased ,Current occupancy: 5/5
+2026-11-16 09:47 Occupancy decreased, Current Occupancy: 4/5
+2026-11-16 09:47 Occupancy increased ,Current occupancy: 1/5
+2026-11-16 09:47 Occupancy increased ,Current occupancy: 2/5
+2026-11-16 09:47 Occupancy increased ,Current occupancy: 3/5
+2026-11-16 09:47 Occupancy increased ,Current occupancy: 4/5
+2026-11-16 09:47 Occupancy increased ,Current occupancy: 5/5
+2026-11-16 09:48 Occupancy decreased, Current Occupancy: 3/4
+2026-11-16 09:48 Occupancy increased ,Current occupancy: 4/10
+2026-11-16 09:48 Occupancy increased ,Current occupancy: 5/10
+2026-11-16 09:48 Occupancy increased ,Current occupancy: 6/10
+2026-11-16 09:48 Occupancy increased ,Current occupancy: 7/10
+2026-11-16 09:48 Occupancy increased ,Current occupancy: 8/10
+2026-11-16 09:48 Occupancy increased ,Current occupancy: 9/10
+2026-11-16 09:48 Occupancy increased ,Current occupancy: 10/10
+2026-11-16 09:49 Occupancy decreased, Current Occupancy: 4/5
+2026-11-16 09:49 Occupancy increased ,Current occupancy: 5/5
+2026-11-16 09:51 Occupancy increased ,Current occupancy: 1/5
+2026-11-16 09:51 Occupancy increased ,Current occupancy: 2/5
+2026-11-16 09:51 Occupancy increased ,Current occupancy: 3/5
+2026-11-16 09:51 Occupancy increased ,Current occupancy: 4/5
+2026-11-16 09:51 Occupancy increased ,Current occupancy: 5/5
+2026-11-16 09:51 Occupancy decreased, Current Occupancy: 4/5
+2026-11-16 09:51 Occupancy decreased, Current Occupancy: 0/1
+2026-11-16 09:52 Occupancy increased ,Current occupancy: 1/1
+2026-11-16 09:53 Occupancy increased ,Current occupancy: 2/4
+2026-11-16 09:53 Occupancy increased ,Current occupancy: 3/4
+2026-11-16 09:53 Occupancy increased ,Current occupancy: 4/4
+2026-11-16 09:54 Occupancy decreased, Current Occupancy: 3/4
+2026-11-16 09:54 Occupancy decreased, Current Occupancy: 2/4
+2026-11-16 09:54 Occupancy decreased, Current Occupancy: 1/4
+2026-11-16 09:54 Occupancy decreased, Current Occupancy: 0/4
+2026-11-16 09:54 Occupancy increased ,Current occupancy: 1/5
+2026-11-16 09:54 Occupancy increased ,Current occupancy: 2/5
+2026-11-16 09:54 Occupancy increased ,Current occupancy: 3/5
+2026-11-16 09:54 Occupancy increased ,Current occupancy: 4/5
+2026-11-16 09:54 Occupancy increased ,Current occupancy: 5/5
+2026-11-16 09:55 Occupancy increased ,Current occupancy: 1/5
+2026-11-16 09:55 Occupancy increased ,Current occupancy: 2/5
+2026-11-16 09:55 Occupancy increased ,Current occupancy: 3/5
+2026-11-16 09:55 Occupancy increased ,Current occupancy: 4/5
+2026-11-16 09:55 Occupancy increased ,Current occupancy: 5/5
+2026-11-16 09:55 Occupancy decreased, Current Occupancy: 4/5
+2026-11-16 09:55 Occupancy decreased, Current Occupancy: 3/5
+2026-11-16 09:55 Occupancy decreased, Current Occupancy: 2/5
+2026-11-16 09:56 Occupancy increased ,Current occupancy: 3/5
+2026-11-16 09:56 Occupancy increased ,Current occupancy: 4/100
+2026-11-16 09:56 Occupancy increased ,Current occupancy: 5/100
+2026-11-16 09:56 Occupancy increased ,Current occupancy: 6/100
+2026-11-16 09:56 Occupancy increased ,Current occupancy: 7/100
+2026-11-16 09:56 Occupancy increased ,Current occupancy: 8/100
+2026-11-16 09:56 Occupancy increased ,Current occupancy: 9/100
+2026-11-16 09:56 Occupancy increased ,Current occupancy: 10/100
