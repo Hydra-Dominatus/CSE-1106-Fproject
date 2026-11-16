@@ -1,53 +1,75 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <pigpio.h>
+#include <time.h>
 
 #define PIN 17 
 
+void get_timestamp(char *buffer, size_t max_size)
+{
+  time_t rawtime;
+  struct tm *timeinfo;
+  time(&rawtime);
+  timeinfo = localtime(&rawtime);
+  strftime(buffer, max_size, "%Y-%m-%d %H:%M", timeinfo);
+}
+
 void turnOnLed(int occupancyCounter, int max)
 {
+  gpioInitialise();
+  gpioSetMode(PIN,PI_OUTPUT);
 	if (occupancyCounter == max)
 	{
-		gpioInitialize();
-		gpioSetMode(PIN,PI_OUTPUT);
+		printf("Room at max capacity\n\n");
 		gpioWrite(PIN, 1); // LED ON
-		gpioTerminate();
-		return 0;
-    }
-	else
-	{
+         }
+	 else
+	 {
+		gpioWrite(PIN, 0); // LED OFF
+		
+		printf("Current Occupancy: %d/%d\n\n", occupancyCounter, max);
+	 }
+	  gpioTerminate();
+	  
+	  return;
 		
 }
 
 void  enterRoom(int *occupancyCounter, int max)
 {
+
+        char timestamp[30];
+	get_timestamp(timestamp,sizeof(timestamp));  
 	
         if (*occupancyCounter < max)
         {
               ++(*occupancyCounter);
 
 
-              FILE * FH = fopen("change_log.md", "r+");
+              FILE * FH = fopen("change_log.txt", "a");
 
               if (FH == NULL)
               {
                       printf("File did not open...\n");
-                      return NULL;
+                      return;
               }
 
-              fprintf(FH, "Occupancy increased by one\n");
+              fprintf(FH, "%s Occupancy increased ,Current occupancy: %d/%d\n", timestamp, *occupancyCounter, max);
 
               fclose(FH);
 			
         }else{
-           printf("Sorry, room is full\n");
            return;
         }
         
 }
 
-void  exitRoom(int *occupancyCounter)
+void  exitRoom(int *occupancyCounter, int max)
 {
+  
+	
+        char timestamp[30];
+	get_timestamp(timestamp,sizeof(timestamp));  
         
 	if (*occupancyCounter > 0)
 	{
@@ -55,19 +77,19 @@ void  exitRoom(int *occupancyCounter)
               --(*occupancyCounter);
            
 
-              FILE * FH = fopen("change_log.md", "r+");
+              FILE * FH = fopen("change_log.txt", "a");
 
               if (FH == NULL)
               {
                       printf("File did not open...\n");
-                      return NULL;
+                      return;
               }
 
-              fprintf(FH, "Occupancy decreased by one\n");
+              fprintf(FH, "%s Occupancy decreased, Current Occupancy: %d/%d\n", timestamp, *occupancyCounter, max);
 
               fclose(FH);
 	}else{
-	   printf("Room already empty\n");
+	   printf("Room already empty\n\n");
 	   return;
 	}
     
@@ -89,15 +111,23 @@ int main()
 		printf("2: Student exits room\n");
 		printf("3: Change max occupancy\n");
 		printf("4: exit menu\n");
+		
+		printf("Enter choice: ");
+		
+	      fgets(buffer, sizeof(buffer), stdin);
+	      sscanf(buffer, "%d", &choice);
+	      
+	      printf("\n");
 
-		switch(choice): 
+		switch(choice) {
     case 1:
 	   enterRoom(&occupancyCounter, maxOccupancy);
-	   turnOnLEd(occupancyCounter, maxOccupancy);
+	   turnOnLed(occupancyCounter, maxOccupancy);
 	   break;
 
    case 2:
-	   exitRoom(&occupancyCounter);
+	   exitRoom(&occupancyCounter, maxOccupancy);
+	   turnOnLed(occupancyCounter, maxOccupancy);
 	   break;
 
    case 3:
@@ -105,50 +135,28 @@ int main()
 	   fgets(buffer, sizeof(buffer), stdin);
 	   sscanf(buffer, "%d", &maxOccupancy);
 	   printf("\nNew max occupancy: %d\n", maxOccupancy);
+	   if (occupancyCounter > maxOccupancy)
+	   {
+	     occupancyCounter = maxOccupancy;
+	    }
+	    
+	   turnOnLed(occupancyCounter, maxOccupancy);
 	   break;
 
    case 4:
-      exit(0);
-       break;
+      gpioInitialise();
+      gpioSetMode(PIN,PI_OUTPUT);
+      printf("Exiting program\n");
+      gpioWrite(PIN, 0); // trun LED OFF
+      gpioTerminate();
+      return 0;
 
    default:
 	   printf("invalid choice\n");
+	 }
+	 
 	}
 
 
-	/*
-	while (occupancyCounter != MAX)
-	{
-
-		   
-           printf("Please select an option (1 to enter the room, 2 to exit the room, 3 to exit): \n");
-           fgets(buffer, sizeof(buffer), stdin);
-	       sscanf(buffer, "%d", &choice);
-
-		
-	   if (choice == 1)
-           {
-		   enterRoom(&occupancyCounter);
-           }
-	   else if (choice == 2)
-           {
-		   exitRoom(&occupancyCounter);
-	   }
-	   else if (choice == 3)
-	   {
-		   exit(0);
-	   }
-	   else 
-	   {
-		   printf("Invalid choice.\n");
-	   }
-
-	}
-
-        if (occupancyCounter == MAX)
-        {
-		turnOnLed(&occupancyCounter);
-	}
-	*/
 
 }
